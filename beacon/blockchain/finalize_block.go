@@ -86,7 +86,7 @@ func (s *Service) FinalizeBlock(
 		return nil, finalizeErr
 	}
 
-	// STEP 4: Post Finalizations cleanups
+	// STEP 4: Post Finalization cleanups
 
 	// fetch and store the deposit for the block
 	blockNum := blk.GetBody().GetExecutionPayload().GetNumber()
