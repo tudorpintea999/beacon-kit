@@ -27,9 +27,9 @@ var (
 	ErrTooManyConsensusTxs = errors.New("too many consensus txs")
 	// ErrUnexpectedBlockSlot is an error for consensus blocks with non consecutive slots.
 	ErrUnexpectedBlockSlot = errors.New("unexpected block slot")
-	// ErrNilBlk is an error for when the beacon block is nil.
+	// ErrNilBlk is an error when the beacon block is nil.
 	ErrNilBlk = errors.New("nil beacon block")
-	// ErrNilBlob is an error for when the BlobSidecars is nil.
+	// ErrNilBlob is an error when the BlobSidecars is nil.
 	ErrNilBlob = errors.New("nil blob")
 	// ErrDataNotAvailable indicates that the required data is not available.
 	ErrDataNotAvailable = errors.New("data not available")
