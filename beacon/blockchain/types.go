@@ -54,7 +54,7 @@ type ConsensusBlock interface {
 type BlobSidecars[T any] interface {
 	constraints.SSZMarshallable
 	constraints.Empty[T]
-	constraints.Nillable
+	constraints.Nullable
 }
 
 // ExecutionEngine is the interface for the execution engine.
