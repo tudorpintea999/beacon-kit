@@ -159,7 +159,7 @@ type SpecData struct {
 	// Deneb1 Value Changes
 	//
 	// EVMInflationAddressDeneb1 is the address on the EVM which will receive the
-	// inflation amount of native EVM balance through a withdrawal every block in the Deneb1 fork.
+	// inflation amount of native EVM balance through a withdrawal of every block in the Deneb1 fork.
 	EVMInflationAddressDeneb1 common.ExecutionAddress `mapstructure:"evm-inflation-address-deneb-one"`
 	// EVMInflationPerBlockDeneb1 is the amount of native EVM balance (in Gwei) to be
 	// minted to the EVMInflationAddressDeneb1 via a withdrawal every block in the Deneb1 fork.
