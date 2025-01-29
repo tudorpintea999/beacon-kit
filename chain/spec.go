@@ -216,7 +216,7 @@ func NewSpec(data *SpecData) (Spec, error) {
 	return s, s.validate()
 }
 
-// validate ensures that the chain spec is valid, returning error if it is not.
+// validate ensures that the chain spec is valid, returning an error if it is not.
 func (s spec) validate() error {
 	if s.Data.MaxWithdrawalsPerPayload <= 1 {
 		return ErrInsufficientMaxWithdrawalsPerPayload
