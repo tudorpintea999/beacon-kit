@@ -64,7 +64,7 @@ type BeaconBlock[
 // BeaconBlockBody represents a beacon block body interface.
 type BeaconBlockBody interface {
 	constraints.SSZMarshallable
-	constraints.Nillable
+	constraints.Nullable
 	// SetRandaoReveal sets the Randao reveal of the beacon block body.
 	SetRandaoReveal(crypto.BLSSignature)
 	// SetEth1Data sets the Eth1 data of the beacon block body.
