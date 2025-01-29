@@ -30,7 +30,7 @@ import (
 )
 
 // sendPostBlockFCU sends a forkchoice update to the execution client after a
-// block is finalized.This function should only be used to notify
+// block is finalized. This function should only be used to notify
 // the EL client of the new head and should not request optimistic builds, as:
 // Optimistic clients already request builds in handleOptimisticPayloadBuild()
 // Non-optimistic clients should never request optimistic builds.
