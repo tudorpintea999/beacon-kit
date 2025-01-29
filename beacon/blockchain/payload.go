@@ -42,7 +42,7 @@ func (s *Service) forceStartupHead(
 		return
 	}
 
-	// TODO: Verify if the slot number is correct here, I believe in current
+	// TODO: Verify if the slot number is correct here, I believe in the current
 	// form it should be +1'd. Not a big deal until hardforks are in play though.
 	if err = s.localBuilder.SendForceHeadFCU(ctx, st, slot+1); err != nil {
 		s.logger.Error(
@@ -187,7 +187,7 @@ func (s *Service) optimisticPayloadBuild(
 		// We set the head of our chain to the block we just processed.
 		payload.GetBlockHash(),
 		// We can say that the payload from the previous block is *finalized*,
-		// This is safe to do since this block was accepted and the thus the
+		// This is safe to do since this block was accepted and thus the
 		// parent hash was deemed valid by the state transition function we
 		// just processed.
 		payload.GetParentHash(),
